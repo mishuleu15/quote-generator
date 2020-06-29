@@ -26,7 +26,7 @@ async function getQuote() {
   loading();
   const proxyUrl = 'https://frozen-atoll-33886.herokuapp.com/';
   const apiUrl =
-    'http://api.forismatic.com/api/1.0/?method=getQuote&lang=ru&format=json';
+    'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
   try {
     const response = await fetch(proxyUrl + apiUrl);
     const data = await response.json();
